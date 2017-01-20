@@ -1,0 +1,21 @@
+exports[`TimelineEvent renders the timeline event 1`] = `
+<div
+  className="timeline-event ready"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundImage": "url(http://fake-image.com/large.jpg)",
+    }
+  }>
+  <aside>
+    <h3>
+      Test Wars
+    </h3>
+    <p>
+      <time>
+        undefined NaN
+      </time>
+    </p>
+  </aside>
+</div>
+`;

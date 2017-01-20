@@ -1,5 +1,5 @@
 import React from 'react';
-import Timeline from './Timeline';
+import Timeline from './timeline/Timeline';
 
 const App = () => {
   return (
@@ -15,6 +15,6 @@ const App = () => {
       </footer>
     </div>
   );
-}
+};
 
 export default App;

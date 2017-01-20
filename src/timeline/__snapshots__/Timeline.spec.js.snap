@@ -1,0 +1,260 @@
+exports[`Timeline renders the timeline using data set to state from api fetch 1`] = `
+<Timeline>
+  <div
+    className="timeline">
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          1995
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events">
+        <TimelineEvent
+          end="1995-10-28"
+          handleClick={[Function]}
+          id={123}
+          start="1995-10-21"
+          thumbnail={
+            Object {
+              "extension": ".jpg",
+              "path": "http://mock-image.com/fake",
+            }
+          }
+          title="Amazing Javascript #1">
+          <div
+            className="timeline-event"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundImage": "url(null)",
+              }
+            }>
+            <aside>
+              <h3>
+                Amazing Javascript #1
+              </h3>
+              <p>
+                <time>
+                  October 1995
+                </time>
+              </p>
+            </aside>
+          </div>
+        </TimelineEvent>
+      </article>
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          1996
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          1997
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          1998
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          1999
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2000
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2001
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2002
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2003
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2004
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2005
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2006
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2007
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2008
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2009
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2010
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2011
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2012
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2013
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2014
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2015
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+    <section
+      className="timeline-year">
+      <header>
+        <h2>
+          2016
+        </h2>
+      </header>
+      <article
+        className="timeline-year-events" />
+    </section>
+  </div>
+</Timeline>
+`;

@@ -1,0 +1,45 @@
+exports[`EventDetail Comics renders comics thumbnails from the given comics array 1`] = `
+<section>
+  <h4>
+    Comics
+  </h4>
+  <div
+    className="event-detail-comics">
+    <div
+      className="event-detail-comic">
+      <a
+        href="http://mock-url-ajs.com"
+        rel="noopener noreferrer"
+        target="_blank">
+        <img
+          alt="Amazing Javascript #1"
+          src="http://mock-image.com/fake/portrait_medium..jpg" />
+      </a>
+    </div>
+    <div
+      className="event-detail-comic">
+      <a
+        href="http://mock-url-ajs2.com"
+        rel="noopener noreferrer"
+        target="_blank">
+        <img
+          alt="Amazing Javascript #2"
+          src="http://mock-image.com/fake2/portrait_medium..jpg" />
+      </a>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`EventDetail Comics when no comics prop is supplied, the loader is shown instead 1`] = `
+<section>
+  <h4>
+    Comics
+  </h4>
+  <div
+    className="event-detail-comics">
+    <div
+      className="loader" />
+  </div>
+</section>
+`;

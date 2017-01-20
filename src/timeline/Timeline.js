@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { range } from 'lodash';
-import { fetchFromMarvel } from './services/marvelApi';
+import { fetchFromMarvel } from '../services/marvelApi';
+import EventDetail from '../eventDetail/EventDetail';
 import TimelineEvent from './TimelineEvent';
-import EventDetail from './EventDetail';
 import './timeline.css';
 
 export default class Timeline extends Component {
@@ -14,15 +14,17 @@ export default class Timeline extends Component {
 
   componentDidMount() {
     fetchFromMarvel('events', { orderBy: 'startDate', limit: 100 })
-      .then(response => {
-        const events = response.data.results.filter(result => result.start && result.end);
-        const years = range(new Date(events[0].start).getFullYear(), new Date().getFullYear());
-        const eventsByYear = years.reduce((memo, year) => {
-          memo[year] = events.filter(({ start }) => new Date(start).getFullYear() === year);
-          return memo;
-        }, {});
-        this.setState({ eventsByYear });
-      });
+      .then(this.setEvents);
+  }
+
+  setEvents = (response) => {
+    const events = response.data.results.filter((result) => result.start && result.end);
+    const years = range(new Date(events[0].start).getFullYear(), new Date().getFullYear());
+    const eventsByYear = years.reduce((memo, year) => {
+      memo[year] = events.filter(({ start }) => new Date(start).getFullYear() === year);
+      return memo;
+    }, {});
+    this.setState({ eventsByYear });
   }
 
   selectEvent = (selectedEvent) => () => this.setState({ selectedEvent });
@@ -38,7 +40,7 @@ export default class Timeline extends Component {
 
     return (
       <div className="timeline">
-        {eventsByYear && Object.keys(eventsByYear).map((year, i) => {
+        {eventsByYear && Object.keys(eventsByYear).map((year) => {
           const events = eventsByYear[year];
 
           return (
@@ -47,7 +49,7 @@ export default class Timeline extends Component {
                 <h2>{year}</h2>
               </header>
               <article className="timeline-year-events">
-                {events.map(event => (
+                {events.map((event) => (
                   <TimelineEvent
                     key={event.id}
                     handleClick={this.selectEvent(event)}

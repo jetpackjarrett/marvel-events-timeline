@@ -3,27 +3,27 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 3px;
+  padding: 0;
   width: 100%;
 }
 
 .timeline-year {
-  animation: fadeIn .35s;
   align-items: stretch;
+  animation: fadeIn .35s;
   display: flex;
   min-height: 200px;
 }
 
 .timeline-year header {
-  flex: 1 1 auto;
   align-items: flex-start;
   border-right: 1px solid #555;
   display: flex;
+  flex: 1 1 auto;
   font-size: 80%;
-  min-height: 100%;
   justify-content: flex-end;
-  max-width: 150px;
   margin: 0;
+  max-width: 150px;
+  min-height: 100%;
   padding: 0 25px;
   position: relative;
   text-align: right;
@@ -60,9 +60,8 @@
 
   .timeline-year header {
     border-right: 0;
-    min-width: 100%;
     margin: 10px;
-    padding: 10px;
+    padding: 0;
   }
 
   .timeline-year header::before {
@@ -72,5 +71,6 @@
   .timeline-year-events {
     display: block;
     padding: 0;
+    width: 100%;
   }
 }

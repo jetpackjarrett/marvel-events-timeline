@@ -12,7 +12,8 @@
 }
 
 .event-detail {
-  margin: 10px;
+  margin: 10px auto;
+  max-width: 1000px;
   padding: 10px;
 }
 
@@ -24,8 +25,8 @@
   font-size: 250%;
   line-height: 1;
   position: absolute;
-  top: 10px;
   right: 10px;
+  top: 10px;
 }
 
 .event-detail-header {
@@ -44,28 +45,8 @@
   color: #fff;
   font-weight: 300;
   margin-right: 10px;
-  text-decoration: none;
-  text-transform: uppercase;
   padding: 5px 10px;
-}
-
-.event-detail-header-text-creators {
-  margin: 10px 0;
-  padding: 0;
-}
-
-.event-detail-header-text-creator {
-  list-style-type: none;
-  margin: 0;
-  padding: 5px;
-}
-
-.event-detail-header-text-creator strong,
-.event-detail-header-text-creator span {
-  display: block;
-}
-
-.event-detail-header-text-creator strong {
+  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -83,6 +64,26 @@
   margin-right: 10px;
 }
 
+.event-detail-creators {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.event-detail-creator {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+}
+
+.event-detail-creator strong,
+.event-detail-creator span {
+  display: block;
+}
+
+.event-detail-creator strong {
+  text-transform: uppercase;
+}
+
 .event-detail-comics {
   display: flex;
   flex-wrap: wrap;
@@ -91,4 +92,32 @@
 
 .event-detail-comic {
   margin: 1px;
+}
+
+@media screen and (max-width: 450px) {
+  .event-detail {
+    max-width: auto;
+  }
+
+  .event-detail-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .event-detail-header img {
+    display: none;
+  }
+
+  .event-detail-content {
+    flex-direction: column;
+  }
+
+  .event-detail-close-button {
+    background-color: #f0141e;
+    height: 25px;
+    line-height: 1px;
+    position: fixed;
+    width: 25px;
+
+  }
 }

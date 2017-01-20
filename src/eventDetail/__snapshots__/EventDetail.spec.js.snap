@@ -1,0 +1,89 @@
+exports[`EventDetail renders the event detail 1`] = `
+<EventDetail
+  comics={
+    Object {
+      "collectionURI": "http://fake-collection-uri.com/comics",
+    }
+  }
+  creators={
+    Object {
+      "items": Array [],
+    }
+  }
+  description="mock description"
+  onClose={[Function]}
+  thumbnail={
+    Object {
+      "extension": "jpg",
+      "path": "http://fake-image.com/large",
+    }
+  }
+  title="Mock Comic"
+  urls={
+    Array [
+      Object {
+        "type": "detail",
+        "url": "http://fake-detail.com",
+      },
+    ]
+  }>
+  <div
+    className="event-detail-container">
+    <button
+      className="event-detail-close-button"
+      onClick={[Function]}>
+      ×
+    </button>
+    <div
+      className="event-detail">
+      <header
+        className="event-detail-header">
+        <div>
+          <img
+            alt="cover" />
+        </div>
+        <div
+          className="event-detail-header-text">
+          <h3>
+            Mock Comic
+          </h3>
+          <p>
+            mock description
+          </p>
+          <a
+            href="http://fake-detail.com"
+            rel="noopener noreferrer"
+            target="_blank">
+            detail
+          </a>
+        </div>
+      </header>
+      <div
+        className="event-detail-content">
+        <Component
+          creators={Array []}>
+          <section>
+            <h4>
+              Creators
+            </h4>
+            <ul
+              className="event-detail-creators" />
+          </section>
+        </Component>
+        <Component>
+          <section>
+            <h4>
+              Comics
+            </h4>
+            <div
+              className="event-detail-comics">
+              <div
+                className="loader" />
+            </div>
+          </section>
+        </Component>
+      </div>
+    </div>
+  </div>
+</EventDetail>
+`;

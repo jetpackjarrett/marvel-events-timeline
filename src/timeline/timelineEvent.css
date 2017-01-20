@@ -5,12 +5,12 @@
   display: flex;
   height: 200px;
   margin: 10px;
-  min-width: 200px;
   max-width: 200px;
+  min-width: 200px;
   opacity: 0;
   padding: 0;
-  transition: all .25s ease-in;
   text-align: center;
+  transition: all .25s ease-in;
 }
 
 .timeline-event.ready {
@@ -52,6 +52,10 @@
     background-size: cover;
     margin: 0;
     max-width: 100%;
+  }
+
+  .timeline-event:hover {
+    transform: scale(1);
   }
 
   .timeline-event aside {

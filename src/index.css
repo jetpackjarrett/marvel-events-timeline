@@ -1,8 +1,18 @@
-*, *:after, *:before {
-  box-sizing: border-box;
+/* stylelint-disable selector-no-universal */
+
+/* Setting box-sizing for all elements */
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-html, body, #root {
+/* stylelint-enable selector-no-universal */
+
+html,
+body,
+.root {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -11,7 +21,7 @@ html, body, #root {
 body {
   background-color: #222;
   color: #eee;
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-family: Lato, Helvetica, Arial, sans-serif;
   font-size: .8em;
   line-height: 1.5;
 }
@@ -25,7 +35,7 @@ h4 {
 }
 
 h1 {
-  font-family: 'Bangers', sans-serif;
+  font-family: Bangers, sans-serif;
   font-size: 300%;
   font-weight: 700;
   letter-spacing: .2em;
@@ -37,8 +47,8 @@ h2 {
 
 h3 {
   font-size: 250%;
-  line-height: 1;
   font-weight: 300;
+  line-height: 1;
 }
 
 h4 {
@@ -54,17 +64,26 @@ h4 {
 }
 
 main {
-  padding: 25px 0;
   min-height: 100vh;
+  padding: 25px 0;
 }
 
 @media screen and (max-width: 450px) {
   .app-header h1 {
     font-size: 150%;
   }
+
+  main {
+    padding: 0;
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
