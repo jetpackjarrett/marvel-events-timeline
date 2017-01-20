@@ -1,0 +1,70 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222;
+  color: #eee;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: .8em;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Bangers', sans-serif;
+  font-size: 300%;
+  font-weight: 700;
+  letter-spacing: .2em;
+}
+
+h2 {
+  font-size: 400%;
+}
+
+h3 {
+  font-size: 250%;
+  line-height: 1;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 200%;
+  font-weight: 400;
+}
+
+.app-header,
+.app-footer {
+  background-color: #f0141e;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 25px 0;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 450px) {
+  .app-header h1 {
+    font-size: 150%;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

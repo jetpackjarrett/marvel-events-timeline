@@ -1,0 +1,94 @@
+.event-detail-container {
+  animation: fadeIn .35s;
+  background-color: rgba(0, 0, 0, .9);
+  bottom: 0;
+  display: flex;
+  left: 0;
+  overflow-y: scroll;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+}
+
+.event-detail {
+  margin: 10px;
+  padding: 10px;
+}
+
+.event-detail-close-button {
+  background-color: transparent;
+  border: 0 none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 250%;
+  line-height: 1;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.event-detail-header {
+  display: flex;
+}
+
+.event-detail-header-text {
+  margin-left: 20px;
+}
+
+.event-detail-header-text a,
+.event-detail-header-text a:active,
+.event-detail-header-text a:visited {
+  background-color: #f0141e;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 300;
+  margin-right: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+.event-detail-header-text-creators {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.event-detail-header-text-creator {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+}
+
+.event-detail-header-text-creator strong,
+.event-detail-header-text-creator span {
+  display: block;
+}
+
+.event-detail-header-text-creator strong {
+  text-transform: uppercase;
+}
+
+.event-detail-content {
+  display: flex;
+  margin: 10px;
+}
+
+.event-detail-content section {
+  flex: 1;
+}
+
+.event-detail-content h4 {
+  border-bottom: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.event-detail-comics {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.event-detail-comic {
+  margin: 1px;
+}
