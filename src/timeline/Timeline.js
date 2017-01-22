@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { range } from 'lodash';
 import { fetchFromMarvel } from '../services/marvelApi';
 import EventDetail from '../eventDetail/EventDetail';
 import TimelineEvent from './TimelineEvent';
@@ -18,8 +17,20 @@ export default class Timeline extends Component {
   }
 
   setEvents = (response) => {
-    const events = response.data.results.filter((result) => result.start && result.end);
-    const years = range(new Date(events[0].start).getFullYear(), new Date().getFullYear());
+    const events = response.data.results
+      .filter((result) => result.start)
+      .map((result) => {
+        // Mavel's API returns timestamps that break in Safari
+        // only using the Date and not the time ensures proper Date parsing
+        result.start = result.start.split(' ')[0];
+        return result;
+      });
+    const firstYear = new Date(events[0].start).getFullYear();
+    const currentYear = new Date().getFullYear();
+    const years = new Array(currentYear - firstYear)
+      .join(' ')
+      .split(' ')
+      .map((_, i) => firstYear + i);
     const eventsByYear = years.reduce((memo, year) => {
       memo[year] = events.filter(({ start }) => new Date(start).getFullYear() === year);
       return memo;
