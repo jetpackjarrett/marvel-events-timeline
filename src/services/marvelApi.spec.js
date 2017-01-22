@@ -1,7 +1,11 @@
-import { getImageUrl, fetchFromMarvel, MARVEL_API_URL, MARVEL_API_KEY } from './marvelApi';
+import { getImageUrl, fetchFromMarvel } from './marvelApi';
 
 describe('Marvel Api', () => {
   describe('fetchFromMarvel', () => {
+    afterEach(() => {
+      window.localStorage.setItem.mockReset();
+    });
+
     it('requests data from the marvel api', (done) => {
       const mockResponse = { data: ['foo', 'bar'] };
       fetch.mockResponse(JSON.stringify(mockResponse));
@@ -17,6 +21,25 @@ describe('Marvel Api', () => {
       fetch.mockResponse(JSON.stringify(mockResponse));
       fetchFromMarvel('http://marvel-api-mock.com/events').then((response) => {
         expect(mockResponse).toEqual(response);
+        done();
+      });
+    });
+
+    it('handles params', (done) => {
+      const mockResponse = { data: ['foo', 'bar'] };
+      fetch.mockResponse(JSON.stringify(mockResponse));
+      fetchFromMarvel('http://marvel-api-mock.com/events', { limit: 50 }).then((response) => {
+        expect(mockResponse).toEqual(response);
+        done();
+      });
+    });
+
+    it('caches the resposne', (done) => {
+      const mockResponse = { data: ['foo', 'bar'] };
+      fetch.mockResponse(JSON.stringify(mockResponse));
+      fetchFromMarvel('http://marvel-api-mock.com/events').then(() => {
+        expect(window.localStorage.setItem.mock.calls.length).toBe(1);
+        expect(window.localStorage.setItem.mock.calls[0][0]).toEqual('http://marvel-api-mock.com/events');
         done();
       });
     });
