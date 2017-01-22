@@ -29,11 +29,13 @@ exports[`EventDetail renders the event detail 1`] = `
   }>
   <div
     className="event-detail-container">
-    <button
+    <div
       className="event-detail-close-button"
       onClick={[Function]}>
-      ×
-    </button>
+      <span>
+        ×
+      </span>
+    </div>
     <div
       className="event-detail">
       <header

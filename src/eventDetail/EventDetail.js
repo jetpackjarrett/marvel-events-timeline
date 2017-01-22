@@ -37,9 +37,9 @@ export default class EventDetail extends Component {
 
     return (
       <div className="event-detail-container">
-        <button onClick={onClose} className="event-detail-close-button">
-          &times;
-        </button>
+        <div onClick={onClose} className="event-detail-close-button">
+          <span>&times;</span>
+        </div>
         <div className="event-detail">
           <header className="event-detail-header">
             <div><img src={image} alt="cover" /></div>

@@ -113,11 +113,22 @@
   }
 
   .event-detail-close-button {
+    align-content: center;
+    align-items: center;
     background-color: #f0141e;
-    height: 25px;
-    line-height: 1px;
+    border-radius: 5px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
     position: fixed;
-    width: 25px;
+    width: 40px;
+  }
 
+  .event-detail-close-button span {
+    display: block;
+    text-align: center;
   }
 }
