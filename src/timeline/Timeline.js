@@ -60,7 +60,12 @@ export default class Timeline extends Component {
                 <h2>{year}</h2>
               </header>
               <article className="timeline-year-events">
-                {events.map((event) => (
+                {events.length === 0 && (
+                  <div className="timeline-year-events-no-events">
+                    <p>No events this year.</p>
+                  </div>
+                )}
+                {events.length > 0 && events.map((event) => (
                   <TimelineEvent
                     key={event.id}
                     handleClick={this.selectEvent(event)}
