@@ -12,7 +12,14 @@ const App = () => {
         <Timeline />
       </main>
       <footer className="app-footer">
-        <p>Data provided by Marvel. © 2014 Marvel</p>
+        <p>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="http://marvel.com">
+            Data provided by Marvel. &copy; 2017 MARVEL
+          </a>
+        </p>
       </footer>
     </div>
   );

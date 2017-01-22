@@ -5,7 +5,8 @@
 
 .app-header,
 .app-footer {
-  background-color: #f0141e;
+  background: #f0141e;
+  background-image: linear-gradient(to left, #6b0c11, #f0141e);
   padding: 20px;
   text-align: center;
 }
@@ -13,6 +14,11 @@
 main {
   min-height: 100vh;
   padding: 25px 0;
+}
+
+.app-footer a,
+.app-footer a:visited {
+  color: #fff;
 }
 
 @media screen and (max-width: 450px) {
