@@ -6,6 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Demo
 http://marvel-events-timeline.herokuapp.com
 
+## Installing
+
+### `npm install`
+
+## Running Locally
+
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
