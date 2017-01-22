@@ -34,6 +34,10 @@
   width: 100%;
 }
 
+.timeline-event time {
+  font-weight: 700;
+}
+
 .timeline-event-description {
   padding: 10px;
 }

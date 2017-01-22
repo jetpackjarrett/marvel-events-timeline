@@ -21,7 +21,7 @@ body,
 body {
   background-color: #222;
   color: #eee;
-  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: .8em;
   line-height: 1.5;
 }
@@ -35,10 +35,8 @@ h4 {
 }
 
 h1 {
-  font-family: Bangers, sans-serif;
   font-size: 300%;
   font-weight: 700;
-  letter-spacing: .2em;
 }
 
 h2 {
@@ -53,7 +51,7 @@ h3 {
 
 h4 {
   font-size: 200%;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .app-header,
