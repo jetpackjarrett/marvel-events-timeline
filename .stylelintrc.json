@@ -4,7 +4,6 @@
     "color-hex-length": "short",
     "color-named": "never",
     "color-no-invalid-hex": true,
-    "font-family-name-quotes": "always-where-required",
     "function-calc-no-unspaced-operator": true,
     "function-comma-space-after": "always",
     "function-comma-space-before": "never",

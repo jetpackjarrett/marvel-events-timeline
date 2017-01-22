@@ -1,5 +1,6 @@
 import React from 'react';
 import Timeline from './timeline/Timeline';
+import './app.css';
 
 const App = () => {
   return (

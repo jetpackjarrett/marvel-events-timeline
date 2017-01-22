@@ -1,0 +1,36 @@
+.app {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.app-header,
+.app-footer {
+  background-color: #f0141e;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  min-height: 100vh;
+  padding: 25px 0;
+}
+
+@media screen and (max-width: 450px) {
+  .app-header h1 {
+    font-size: 150%;
+  }
+
+  main {
+    padding: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
